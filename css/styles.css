@@ -1,0 +1,365 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header,
+.choice,
+.card,
+.chief,
+.footer {
+    background-color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+}
+
+.header-logo {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+
+.header-logo p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 10px;
+    width: 60px;
+}
+
+.header-logo p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header-nav {
+    display: inline-block;
+    margin-left: 280px;
+}
+
+.header-nav ul {
+    list-style: none;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(253, 239, 213);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.header-nav ul li a:hover,
+.header-nav ul li a:focus {
+    color: #ffaf18;
+}
+
+.header-nav ul li a:after {
+    display: block;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffaf18;
+    content: "";
+    transition: 0.5s;
+}
+
+.header-nav ul li a:hover:after {
+    width: 100%;
+}
+
+.сhoice-block {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 130px 0;
+}
+
+.сhoice-block-info {
+    margin-bottom: 92px;
+}
+
+.super-sushi {
+    max-width: 564px;
+}
+
+h1 {
+    margin-bottom: 74px;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.222;
+}
+
+h1 span {
+    color: #ffaf18;
+}
+
+.sushi-img {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 614px;
+    margin-left: 2px;
+    margin-top: 170px;
+}
+
+.text-tuna {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.text-tuna p img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.text-sushi {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.text-sushi p img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.button-choice {
+    background-color: rgb(255, 175, 24);
+    width: 224px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-top: 4px;
+}
+
+.button-choice a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    line-height: 3.438;
+}
+
+.card {
+    padding-bottom: 59px;
+    padding-top: 130px;
+}
+
+h2 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.571;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.place-cards {
+    font-size: 0;
+}
+
+.item-card {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    width: 282px;
+    height: 354px;
+    font-size: 0;
+    text-align: center;
+    margin-right: 24px;
+    margin-bottom: 24px;
+    padding: 10px 20px 15px;
+}
+
+.item-card:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+.item-card:nth-child(4n+4) {
+    margin: 0;
+}
+
+.item-card:first-child,
+.item-card:last-child {
+    border: 5px solid rgb(237, 155, 0);
+    position: relative;
+    padding: 5px 15px 10px;
+}
+
+.item-card h4 {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(24, 26, 26);
+    font-weight: bold;
+    line-height: 3.056;
+    /*margin-bottom: 10px;*/
+}
+
+.recipe {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    width: 235px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.basket {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.item-card .basket-button {
+    background-color: rgb(255, 175, 24);
+    position: relative;
+    border-radius: 30px;
+    bottom: 15px;
+    width: 242px;
+    height: 50px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    line-height: 3.438;
+}
+
+.button-choice:hover,
+.item-card .basket-button:hover {
+    box-shadow: 0 5px 10px 3px rgba(255, 175, 24, 0.5);
+}
+
+.sushi-info-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.sushi-info {
+    max-width: 367px;
+    display: inline-block;
+}
+
+.sushi-info-text h2 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.286;
+    text-align: start;
+    margin-bottom: 70px;
+    margin-top: 120px;
+}
+
+.sushi-info-text p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    max-width: 345px;
+    margin-bottom: 105px;
+}
+
+.sushi-info-text h3 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.4;
+    width: 351px;
+    margin-bottom: 40px;
+}
+
+.sushi-info ul {
+    list-style: none;
+}
+
+.sushi-info ul li {
+    display: inline-block;
+    margin-right: 40px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    padding: 15px 5px 10px 10px;
+    border-radius: 50%;
+}
+
+.sushi-info ul li img {
+    /*width: 100%;*/
+    width: 41px;
+    height: 29px;
+}
+
+.sushi-info ul li:hover {
+    /*border-radius: 50%;*/
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.cook {
+    display: inline-block;
+    max-width: 768px;
+    margin-left: 58px;
+    margin-bottom: 70px;
+}
+.cook img {
+   background-size: cover;
+}
+
+footer .container {
+    padding: 30px 0;
+    vertical-align: middle;
+}
+
+.rights {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(44, 44, 44);
+    line-height: 1.2;
+    margin-left: 400px;
+}
+
+
+
+

@@ -1,0 +1,389 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.header,
+.choice,
+.card,
+.chief,
+.footer {
+    background-color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /*background: rosybrown;*/
+}
+
+.header .container {
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    align-items: center;
+}
+
+.burger {
+    display: none;
+}
+
+.header-logo {
+    /*display: inline-block;*/
+    /*vertical-align: middle;*/
+    /*align-self: center;*/
+    cursor: pointer;
+}
+
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    width: 55px;
+}
+
+/*.logo img {*/
+/*    !*width: 100%;*!*/
+/*}*/
+
+.header {
+    padding: 30px 0;
+}
+
+.header-logo p {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+    margin-left: 10px;
+    width: 60px;
+}
+
+.header-logo p a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.header-nav {
+    /*display: inline-block;*/
+    /*margin-left: 280px;*/
+    justify-self: center;
+}
+
+.header-nav ul {
+    list-style: none;
+}
+
+.header-nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(253, 239, 213);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.header-nav ul li a:hover,
+.header-nav ul li a:focus {
+    color: #ffaf18;
+}
+
+.header-nav ul li a:after {
+    display: block;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #ffaf18;
+    content: "";
+    transition: 0.5s;
+}
+
+.header-nav ul li a:hover:after {
+    width: 100%;
+}
+
+.choice .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    padding: 133px 0;
+}
+
+h1 {
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.222;
+    justify-self: end;
+    margin-bottom: 74px;
+    grid-template-columns: fit-content(614px);
+}
+
+h1 span {
+    color: #ffaf18;
+}
+
+.сhoice-block-info {
+    justify-self: start;
+}
+
+
+.sushi-img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+    align-self: end;
+}
+
+.sushi-img img {
+    width: 100%;
+}
+
+.text-tuna {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 100px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.text-tuna p img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.text-sushi {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.text-sushi p img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 40px;
+}
+
+.button-choice {
+    background-color: rgb(255, 175, 24);
+    width: 224px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+    padding-top: 4px;
+    margin: 92px 0 45px 0;
+}
+
+.button-choice a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    line-height: 3.438;
+}
+
+
+.card .container {
+    padding: 67px 0 60px;
+}
+
+.place-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 282px));
+    grid-gap: 24px;
+    justify-content: center;
+}
+
+
+h2 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.item-card {
+    /*display: inline-block;*/
+    background-color: rgb(255, 255, 255);
+    width: 282px;
+    height: 354px;
+    font-size: 0;
+    text-align: center;
+    /*margin-right: 24px;*/
+    /*margin-bottom: 24px;*/
+    padding: 10px 20px 15px;
+}
+
+.item-card:hover {
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
+}
+
+.item-card:nth-child(4n+4) {
+    margin: 0;
+}
+
+.item-card:first-child,
+.item-card:last-child {
+    border: 5px solid rgb(237, 155, 0);
+    position: relative;
+    padding: 5px 15px 10px;
+}
+
+.item-card h4 {
+    display: inline-block;
+    font-size: 18px;
+    color: rgb(24, 26, 26);
+    font-weight: bold;
+    line-height: 3.056;
+}
+
+.recipe {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(24, 26, 26);
+    line-height: 1.286;
+    width: 235px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+.basket {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.item-card .basket-button {
+    background-color: rgb(255, 175, 24);
+    position: relative;
+    border-radius: 30px;
+    bottom: 15px;
+    width: 242px;
+    height: 50px;
+    border-style: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: rgb(2, 3, 3);
+    font-weight: bold;
+    line-height: 3.438;
+}
+
+.button-choice:hover,
+.item-card .basket-button:hover {
+    box-shadow: 0 5px 10px 3px rgba(255, 175, 24, 0.5);
+}
+
+
+
+
+.chief .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /*grid-template-rows: repeat(3, 1fr);*/
+    grid-column-gap: 48px;
+    padding-bottom: 67px;
+}
+
+
+.chief h2 {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.286;
+    text-align: start;
+    margin-bottom: 70px;
+    margin-top: 120px;
+}
+
+.chief p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    max-width: 345px;
+    margin-bottom: 105px;
+}
+
+.chief h3 {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.4;
+    width: 351px;
+    margin-bottom: 40px;
+}
+
+.chief ul {
+    list-style: none;
+}
+
+.chief ul li {
+    display: inline-block;
+    margin-right: 40px;
+    background-color: white;
+    width: 60px;
+    height: 60px;
+    padding: 15px 5px 10px 10px;
+    border-radius: 50%;
+}
+
+.chief ul li img {
+    width: 41px;
+    height: 29px;
+}
+
+.chief ul li:hover {
+    /*border-radius: 50%;*/
+    box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+.cook {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+    /*margin-left: 58px;*/
+    /*margin-bottom: 70px;*/
+    order: 2;
+    padding-top: 202px;
+}
+
+.cook img {
+    max-width: 100%;
+}
+
+footer .container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.rights {
+    display: inline-block;
+    font-size: 12px;
+    color: rgb(84, 84, 84);
+    line-height: 1.2;
+    margin-left: 400px;
+}
+
+
+
+
